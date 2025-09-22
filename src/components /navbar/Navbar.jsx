@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Navbar.css"
 import { assets } from '../../assets/assets'
 
 const Navbar = () => {
@@ -11,7 +12,14 @@ const Navbar = () => {
         <li>mobile-app</li>
         <li>contact-us</li> 
     </ul>
-      
+    <div className='navbar-right'>
+        <img src={assets.search_icon}/>
+        <div className='navbar-search-icon'>
+            <img src = {assets.basket_icon}/>
+            <div className='dot'></div>
+        </div>
+        <button>sign in</button>
+    </div>
     </div>
   )
 }
